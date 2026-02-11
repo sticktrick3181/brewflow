@@ -327,6 +327,7 @@ const Navbar: React.FC<NavbarProps> = ({ onToggleTheme, isDarkMode }) => {
             </IconButton>
 
             {/* Wallet and user menu */}
+            
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
             {isLoggedIn && (
               <Box sx={{ 
@@ -441,7 +442,7 @@ const Navbar: React.FC<NavbarProps> = ({ onToggleTheme, isDarkMode }) => {
 
 
 const App = () => {
-  const [mode, setMode] = useState<'light' | 'dark'>('dark');
+  const [mode, setMode] = useState<'light' | 'dark'>('light');
   
   const toggleTheme = () => {
     setMode(prevMode => prevMode === 'light' ? 'dark' : 'light');
